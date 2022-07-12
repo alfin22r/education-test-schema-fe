@@ -1,0 +1,30 @@
+Nama : Muhammad Alfin Syaghaf
+Alamat Email: alfinsyaghaf4794@gmail.com
+Waktu Mulai : 16.50 kemarin
+Waktu Selesai : 22.35
+
+<html>
+<head>
+<script type="text/javascript">
+function validation(){
+  var val = /^[a-zA-Z ]+$/;
+  var nama = document.getElementById("nama");
+  if (nama.value.match(val)) {
+      alert("nama kamu : " + nama.value);
+  } else {
+      alert("masukkan nama Anda!\n dan menggunakan huruf bukan angka!");
+      nama.value="";
+      nama.focus();
+      return false;
+  }
+}
+</script>
+</head>
+<body>
+
+nama anda:<br>
+<input type="text" id="nama">
+<button onclick="validation()"> gas </button>
+
+</body>
+</html>
